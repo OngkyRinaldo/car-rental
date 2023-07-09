@@ -1,0 +1,183 @@
+$main: #557153;
+
+.hero {
+    width: 85%;
+    margin: 0 auto;
+    height: fit-content;
+    margin-top: 5rem;
+
+    .hero-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: space-between;
+        align-items: center;
+
+        .hero-title {
+            width: 49%;
+
+            h1 {
+                color: $main;
+                font-size: 42px;
+            }
+
+            p {
+                margin-top: 20px;
+                padding-right: 25px;
+                font-size: 24px;
+            }
+
+            .hero-socmed {
+                margin-top: 100px;
+                padding-right: 100px;
+
+                .hero-apps {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: -2.5rem;
+
+                    .google-play {
+                        width: 49%;
+                        img {
+                            width: 75%;
+                        }
+                    }
+
+                    .apple-store {
+                        width: 49%;
+                        img {
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hero-img {
+            width: 50%;
+            background-color: $main;
+            border-radius: 0.5rem;
+
+            img {
+                margin-left: -21rem;
+                width: 970px;
+                object-fit: cover;
+            }
+        }
+
+        .hero-socmed-sm {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        width: 100%;
+
+        .hero-container {
+            display: block;
+
+            .hero-title {
+                width: 100%;
+
+                h1 {
+                    font-size: 25px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                .hero-socmed {
+                    margin-top: 10px;
+
+                    p {
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                    }
+
+                    .hero-apps {
+                        margin: 0 auto;
+                        padding: 0 10px;
+                        .google-play {
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .apple-store {
+                            width: 50%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hero-img {
+                margin-top: -20px;
+                width: 100%;
+
+                img {
+                    width: 400px;
+                    margin-left: -5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        height: 100vh;
+        width: 100%;
+        padding: 0 10px;
+
+        .hero-container {
+            gap: 0;
+            padding: 0 15px;
+
+            .hero-title {
+                p {
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                }
+                .hero-socmed {
+                    margin-top: 10px;
+                    padding-right: 100px;
+
+                    .hero-apps {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -2.5rem;
+                        margin-left: -1rem;
+
+                        .google-play {
+                            width: 49%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .apple-store {
+                            width: 49%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+$main: #557153;
+$orange: #ff4d30;
+
+.book {
+    width: 85%;
+    margin: 0 auto;
+    height: 100vh;
+    margin-top: 5rem;
+
+    .book-container {
+        width: 100%;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+        border-radius: 0.5rem;
+        padding: 15px 20px;
+
+        h2 {
+            color: $main;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.5rem;
+
+            margin-top: 15px;
+
+            .car-type,
+            .pick-up {
+                label {
+                    i {
+                        color: $orange;
+                    }
+
+                    b {
+                        color: red;
+                    }
+                }
+
+                select {
+                    width: 100%;
+                    margin-top: 10px;
+                    display: block;
+                    padding: 0.5rem 0.75rem;
+                }
+            }
+        }
+    }
+}
