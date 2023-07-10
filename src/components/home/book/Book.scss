@@ -74,7 +74,7 @@ $orange: #ff4d30;
                     margin-top: 27px;
                     display: block;
                     padding: 0.75rem 1.5rem;
-                    background-color: $orange;
+                    background-color: $main;
                     color: #fff;
                     font-size: 22px;
                     font-weight: 700;
@@ -83,7 +83,7 @@ $orange: #ff4d30;
                     transition: all 0.2s;
 
                     &:hover {
-                        background-color: #fe3516;
+                        background-color: #3d503c;
                     }
                 }
             }
@@ -91,9 +91,9 @@ $orange: #ff4d30;
     }
 }
 
-@media (max-width: 640px) {
+@media only screen and (min-width: 320px) and (max-width: 375px) {
     .book {
-        margin-top: -7rem;
+        margin-top: 5rem;
         .book-container {
             form {
                 grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -102,8 +102,19 @@ $orange: #ff4d30;
     }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (min-width: 360px) and (max-width: 428px) {
     .book {
-        margin-top: -25rem;
+        margin-top: -8rem;
+        .book-container {
+            form {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .book {
+        margin-top: -20rem;
     }
 }
