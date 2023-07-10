@@ -43,6 +43,43 @@ const Book = () => {
                             <option>Palembang</option>
                         </select>
                     </div>
+                    <div className='drop-off'>
+                        <label>
+                            <i className='fa-solid fa-location-dot'></i> &nbsp;
+                            Drop-Off <b>*</b>
+                        </label>
+                        <select>
+                            <option>Select your car type</option>
+                            <option>DKI Jakarta</option>
+                            <option>Surabaya</option>
+                            <option>Medan</option>
+                            <option>Bandung</option>
+                            <option>Makasar</option>
+                            <option>Semarang</option>
+                            <option>Palembang</option>
+                        </select>
+                    </div>
+                </form>
+
+                <form>
+                    <div className='pick-up'>
+                        <label>
+                            <i className='fa-regular fa-calendar-days '></i>{' '}
+                            &nbsp; Pick-Up <b>*</b>
+                        </label>
+                        <input type='date' />
+                    </div>
+                    <div className='drop-off'>
+                        <label>
+                            <i className='fa-regular fa-calendar-days '></i>{' '}
+                            &nbsp; Drop-Off <b>*</b>
+                        </label>
+                        <input type='date' />
+                    </div>
+
+                    <div className='search'>
+                        <button>Search</button>
+                    </div>
                 </form>
             </div>
         </section>

@@ -4,8 +4,9 @@ $orange: #ff4d30;
 .book {
     width: 85%;
     margin: 0 auto;
-    height: 100vh;
+    height: fit-content;
     margin-top: 5rem;
+    padding-bottom: 20px;
 
     .book-container {
         width: 100%;
@@ -27,7 +28,8 @@ $orange: #ff4d30;
             margin-top: 15px;
 
             .car-type,
-            .pick-up {
+            .pick-up,
+            .drop-off {
                 label {
                     i {
                         color: $orange;
@@ -42,9 +44,66 @@ $orange: #ff4d30;
                     width: 100%;
                     margin-top: 10px;
                     display: block;
-                    padding: 0.5rem 0.75rem;
+                    padding: 1rem 1.5rem;
+                }
+            }
+
+            .pick-up,
+            .drop-off {
+                label {
+                    i {
+                        color: $orange;
+                    }
+
+                    b {
+                        color: red;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    margin-top: 10px;
+                    display: block;
+                    padding: 1rem 1.5rem;
+                }
+            }
+
+            .search {
+                button {
+                    width: 100%;
+                    margin-top: 27px;
+                    display: block;
+                    padding: 0.75rem 1.5rem;
+                    background-color: $orange;
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: 700;
+                    border: 1px solid yellow;
+                    cursor: pointer;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        background-color: #fe3516;
+                    }
                 }
             }
         }
+    }
+}
+
+@media (max-width: 640px) {
+    .book {
+        margin-top: -7rem;
+        .book-container {
+            form {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .book {
+        margin-top: -25rem;
     }
 }
