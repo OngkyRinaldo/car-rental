@@ -2,7 +2,7 @@ import './book.scss';
 
 const Book = () => {
     return (
-        <section className='book'>
+        <section className='book' id='booking'>
             <div className='book-container'>
                 <h2>Book a car</h2>
                 <form>

@@ -1,12 +1,12 @@
-import './pickCar.scss';
+import './banner.scss';
 import Audi from './assets/img/audi.jpg';
 
-const PickCar = () => {
+const Banner = () => {
     return (
-        <section className='pickcar'>
-            <div className='pickcar-container'>
+        <section className='banner'>
+            <div className='banner-container'>
                 <img src={Audi} alt='audi,jpg' />
-                <div className='pickcar-desc'>
+                <div className='banner-desc'>
                     <span>Best Services</span>
                     <h2>Feel The Best Experiences With Our Car Rental Deals</h2>
                     <div className='tag'>
@@ -42,4 +42,4 @@ const PickCar = () => {
     );
 };
 
-export default PickCar;
+export default Banner;

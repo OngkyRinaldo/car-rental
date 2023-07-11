@@ -1,0 +1,207 @@
+$main: #557153;
+
+.carList {
+    width: 85%;
+    margin: 0 auto;
+    height: fit-content;
+    margin-top: 5rem;
+    padding-bottom: 15px;
+
+    .carList-container {
+        width: 100%;
+
+        .carList-title {
+            margin-bottom: 15px;
+
+            h2 {
+                text-align: center;
+                font-size: 36px;
+            }
+        }
+
+        .carList-card {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 0.5rem;
+
+            .card {
+                border-radius: 0.5rem;
+                box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+                    0 1px 2px -1px rgb(0 0 0 / 0.1);
+                padding: 15px;
+                position: relative;
+
+                button {
+                    border: none;
+                    position: absolute;
+                    right: 0;
+
+                    i {
+                        cursor: pointer;
+                    }
+                }
+
+                .button.red {
+                    i {
+                        cursor: pointer;
+                        color: red;
+                    }
+                }
+
+                img {
+                    object-fit: cover;
+                    height: 150px;
+                }
+
+                .card-title {
+                    margin-top: 5px;
+                    .card-year {
+                        color: #808080;
+                        margin-bottom: 5px;
+                    }
+
+                    .card-price {
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                        p {
+                            display: inline;
+                            font-size: 14px;
+                            color: #808080;
+                        }
+
+                        .card-priceday {
+                            margin-right: 5px;
+                        }
+
+                        .card-pricemonth {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .card-desc {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .shiftgear {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        p {
+                            color: $main;
+                        }
+                    }
+
+                    .gas {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        i {
+                            margin-right: 5px;
+                        }
+
+                        p {
+                            color: $main;
+                        }
+                    }
+                }
+
+                .card-link {
+                    text-align: center;
+                    border-radius: 0.5rem;
+                    background-color: $main;
+                    cursor: pointer;
+                    padding: 8px 16px;
+                }
+            }
+        }
+
+        .card-seeMore {
+            margin-top: 30px;
+            font-size: 24px;
+            text-align: center;
+            border-radius: 0.5rem;
+            background-color: $main;
+            cursor: pointer;
+            padding: 8px 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 50%;
+            border: 1px solid #fff;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1114px) {
+    .carList {
+        .carList-container {
+            .carList-card {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 0.5rem;
+
+                .card {
+                    img {
+                        object-fit: cover;
+                        height: 50px;
+                    }
+
+                    .card-title {
+                        .title {
+                            font-size: 10px;
+                        }
+
+                        .card-price {
+                            span {
+                                display: none;
+                            }
+
+                            .card-pricemonth {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+
+                    .card-desc {
+                        display: block;
+                        .shiftgear {
+                            margin-left: -15px;
+                            img {
+                                width: 40px;
+                                height: 40px;
+                            }
+
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .gas {
+                            margin-bottom: 5px;
+
+                            i {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                    .card-link {
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
