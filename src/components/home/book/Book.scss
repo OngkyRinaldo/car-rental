@@ -91,30 +91,13 @@ $orange: #ff4d30;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 1114px) {
     .book {
-        margin-top: 5rem;
+        margin-top: 7rem;
         .book-container {
             form {
                 grid-template-columns: repeat(1, minmax(0, 1fr));
             }
         }
-    }
-}
-
-@media only screen and (min-width: 360px) and (max-width: 428px) {
-    .book {
-        margin-top: -8rem;
-        .book-container {
-            form {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .book {
-        margin-top: -20rem;
     }
 }

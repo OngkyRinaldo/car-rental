@@ -1,57 +1,63 @@
 $main: #557153;
 
 .hero {
-    width: 85%;
-    margin: 0 auto;
-    height: fit-content;
-    margin-top: 1rem;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 10px;
 
     .hero-container {
-        width: 100%;
+        width: 85%;
+        margin: 0 auto;
+        height: 100vh;
         display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
 
         .hero-title {
-            width: 49%;
+            width: 40%;
+            margin-top: 10rem;
 
             h1 {
+                font-size: 36px;
                 color: $main;
-                font-size: 42px;
+                margin-bottom: 20px;
             }
 
             p {
-                margin-top: 20px;
-                padding-right: 25px;
                 font-size: 20px;
+                margin-bottom: 10px;
             }
 
             .hero-socmed {
-                margin-top: 100px;
-                padding-right: 100px;
+                width: 100%;
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 40px;
+                }
 
                 .hero-apps {
+                    width: 100%;
                     display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
-                    margin-top: -2.5rem;
+                    flex-wrap: wrap;
 
                     .google-play {
-                        width: 49%;
+                        width: 50%;
 
                         img {
-                            width: 75%;
+                            width: 100%;
                         }
                     }
 
                     .apple-store {
-                        width: 49%;
+                        width: 50%;
 
                         img {
-                            width: 75%;
+                            width: 100%;
                         }
                     }
                 }
@@ -59,125 +65,48 @@ $main: #557153;
         }
 
         .hero-img {
-            width: 50%;
+            width: 55%;
             background-color: $main;
-            border-radius: 0.5rem;
-
+            border-radius: 1rem;
+            height: 100%;
+            position: relative;
             img {
-                margin-left: -21rem;
-                width: 970px;
+                width: 175%;
+                position: absolute;
+                margin-top: -5rem;
+                margin-left: -25rem;
                 object-fit: cover;
             }
-        }
-
-        .hero-socmed-sm {
-            display: none;
         }
     }
 }
 
-@media (max-width: 640px) {
+@media only screen and (min-width: 320px) and (max-width: 1114px) {
     .hero {
-        width: 100%;
-
         .hero-container {
             display: block;
+            height: fit-content;
 
             .hero-title {
                 width: 100%;
-
-                h1 {
-                    font-size: 25px;
-                }
-
-                p {
-                    font-size: 14px;
-                }
+                margin-top: 1rem;
 
                 .hero-socmed {
-                    margin-top: 10px;
-
                     p {
-                        font-size: 18px;
-                        margin-bottom: 20px;
-                    }
-
-                    .hero-apps {
-                        margin: 0 auto;
-                        padding: 0 10px;
-                        .google-play {
-                            width: 100%;
-
-                            img {
-                                width: 100%;
-                            }
-                        }
-
-                        .apple-store {
-                            width: 50%;
-
-                            img {
-                                width: 100%;
-                            }
-                        }
+                        margin-bottom: -1.5rem;
                     }
                 }
             }
 
             .hero-img {
-                margin-top: -20px;
                 width: 100%;
-
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 img {
-                    width: 400px;
-                    margin-left: -5rem;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1024px) {
-    .hero {
-        height: 100vh;
-        width: 100%;
-        padding: 0 10px;
-
-        .hero-container {
-            gap: 0;
-            padding: 0 15px;
-
-            .hero-title {
-                p {
-                    font-size: 22px;
-                    margin-bottom: 20px;
-                }
-                .hero-socmed {
-                    margin-top: 10px;
-                    padding-right: 100px;
-
-                    .hero-apps {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        align-items: center;
-                        margin-top: -2.5rem;
-                        margin-left: -1rem;
-
-                        .google-play {
-                            width: 49%;
-                            img {
-                                width: 100%;
-                            }
-                        }
-
-                        .apple-store {
-                            width: 49%;
-                            img {
-                                width: 100%;
-                            }
-                        }
-                    }
+                    margin: 0 auto;
+                    width: 120%;
                 }
             }
         }
