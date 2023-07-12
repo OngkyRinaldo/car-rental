@@ -1,0 +1,96 @@
+$main: #557153;
+
+.Navbars {
+    background-color: #fff;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    .NavbarWrappers {
+        list-style-type: none;
+
+        .NavbarElement {
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+
+            .link {
+                text-decoration: none;
+                color: #000;
+
+                &:hover {
+                    color: #e93a7d;
+                    padding: 10px;
+                    border-radius: 20px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+        }
+
+        .nav-account {
+            justify-content: center;
+            text-align: center;
+
+            .navButton {
+                padding: 10px;
+                justify-content: center;
+                text-align: center;
+
+                .link {
+                    text-decoration: none;
+                    color: #000;
+
+                    &:hover {
+                        color: $main;
+                        padding: 10px;
+                        border-radius: 20px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                }
+            }
+
+            .navElement {
+                padding: 10px;
+                justify-content: center;
+                text-align: center;
+
+                .link {
+                    text-decoration: none;
+                    color: #000;
+
+                    &:hover {
+                        color: $main;
+                        padding: 10px;
+                        border-radius: 20px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+
+        .navButton {
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+
+            .link {
+                text-decoration: none;
+                color: #000;
+
+                &:hover {
+                    color: $main;
+                    padding: 10px;
+                    border-radius: 20px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}

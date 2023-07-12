@@ -21,7 +21,7 @@ const Faq = () => {
                     <h3>Frequently Asked Questions</h3>
                     <p>
                         Frequently Asked Questions About the Car Rental Booking
-                        Process on Our Website: Answers to{' '}
+                        Process on Our Website: Answers to
                         <span>Common Concerns and Inquiries.</span>
                     </p>
                 </div>
@@ -30,12 +30,11 @@ const Faq = () => {
                     <img src={Car} alt='audi.jpg' />
                     <div className='accordion'>
                         {datas.map((data, i) => (
-                            <>
+                            <div key={data.id}>
                                 <div
                                     className={`accordion-title ${
                                         selected === i ? 'title show' : 'title'
                                     }`}
-                                    key={data.id}
                                     onClick={() => toggle(i)}
                                 >
                                     <h2>{data.question} </h2>
@@ -50,7 +49,7 @@ const Faq = () => {
                                 >
                                     {data.answer}
                                 </div>
-                            </>
+                            </div>
                         ))}
                     </div>
                 </div>

@@ -1,0 +1,104 @@
+$main: #557153;
+
+header {
+    width: 100%;
+
+    nav {
+        width: 85%;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 0;
+
+        .navbar-wrapper {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+
+            .navLogo {
+                float: left;
+                font-size: 25px;
+                font-weight: 900;
+
+                transition: 0.2s ease-in;
+
+                .link {
+                    text-decoration: none;
+                    color: $main;
+                }
+            }
+
+            .navElement {
+                display: inline;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                font-weight: 200;
+                padding: 10px 20px 10px 20px;
+
+                .link {
+                    text-decoration: none;
+                    color: #2e2e2e;
+                }
+            }
+
+            .nav-account {
+                float: right;
+
+                .navElement {
+                    .link {
+                        text-decoration: none;
+                        color: $main;
+                        font-weight: 400;
+                    }
+                }
+
+                .navButton {
+                    float: right;
+                    background-color: $main;
+                    border-radius: 0.25rem;
+                    padding: 10px 20px 10px 20px;
+                    margin: -8px 2px 1px 2px;
+
+                    &:hover {
+                        background-color: #395037;
+                        cursor: pointer;
+                    }
+
+                    .link {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .icon {
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 428px) {
+    header {
+        nav {
+            padding: 25px 0;
+
+            .navbar-wrapper {
+                .navElement,
+                .nav-account {
+                    display: none;
+                }
+            }
+
+            .icon {
+                display: inline;
+                position: relative;
+                left: 30%;
+            }
+        }
+    }
+}
