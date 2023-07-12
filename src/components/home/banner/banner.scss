@@ -1,14 +1,16 @@
 $main: #557153;
 
 .banner {
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
+
     height: fit-content;
-    margin-top: 5rem;
+    padding-top: 5rem;
     padding-bottom: 10px;
+    background-color: #f8f8f8;
 
     .banner-container {
-        width: 100%;
+        width: 85%;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
