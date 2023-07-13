@@ -6,6 +6,7 @@ import Menu from './components/navbar/Menu';
 
 import Footer from './components/footer/Footer';
 import About from './pages/About';
+import Vechicle from './pages/Vechicle';
 
 const App = () => {
     const [clicked, isClicked] = useState(false);
@@ -16,6 +17,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
+                <Route path='/vechicle' element={<Vechicle />} />
             </Routes>
 
             <Footer />
