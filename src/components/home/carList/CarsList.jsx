@@ -19,7 +19,7 @@ const CarsList = () => {
 
                 <button className='card-seeMore'>
                     <Link
-                        to='#'
+                        to='/vechicle'
                         style={{ textDecoration: 'none', color: '#fff' }}
                     >
                         See More
