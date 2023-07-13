@@ -11,12 +11,25 @@ const Menu = () => {
                 </li>
                 <li className='NavbarElement'>
                     <NavLink className='link' to='/about'>
-                        About Us
+                        About
                     </NavLink>
                 </li>
                 <li className='NavbarElement'>
-                    <NavLink className='link'>Contact Us</NavLink>
+                    <NavLink className='link' to='/vechicle'>
+                        Vehicle Models
+                    </NavLink>
                 </li>
+                <li className='NavbarElement'>
+                    <NavLink className='link' to='/teams'>
+                        Our Team
+                    </NavLink>
+                </li>
+                <li className='NavbarElement'>
+                    <NavLink className='link' to='/contact'>
+                        Contact
+                    </NavLink>
+                </li>
+
                 <div className='nav-account'>
                     <li className='navButton'>
                         <NavLink className='link'>Sing Up</NavLink>

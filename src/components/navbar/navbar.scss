@@ -2,7 +2,6 @@ $main: #557153;
 
 header {
     width: 100%;
-    background-color: transparent;
 
     nav {
         width: 85%;
@@ -83,7 +82,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 428px) {
+@media only screen and (min-width: 320px) and (max-width: 1114px) {
     header {
         nav {
             padding: 25px 0;

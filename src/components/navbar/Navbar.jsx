@@ -57,8 +57,15 @@ const Navbar = ({ clicked, isClicked }) => {
                         </NavLink>
                     </li>
                     <li className='navElement'>
-                        <NavLink className='link'>Contact Us</NavLink>
+                        <NavLink
+                            className='link'
+                            to='/contact'
+                            style={navLinkStyles}
+                        >
+                            Contact
+                        </NavLink>
                     </li>
+
                     <div className='nav-account'>
                         <li className='navButton'>
                             <NavLink className='link'>Sing In</NavLink>

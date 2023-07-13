@@ -1,0 +1,167 @@
+$main: #557153;
+
+section {
+    width: 85%;
+    margin: 0 auto;
+    height: fit-content;
+    margin-top: 2rem;
+    padding-bottom: 100px;
+
+    .contact-container {
+        width: 100%;
+
+        .contact-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+
+            .contact-additional {
+                width: 45%;
+
+                h2 {
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #808080;
+                    margin-bottom: 20px;
+                }
+
+                .phone {
+                    cursor: pointer;
+                    margin-bottom: 20px;
+                    i {
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        color: $main;
+                    }
+                }
+                .mail {
+                    cursor: pointer;
+                    margin-bottom: 20px;
+                    i {
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        color: $main;
+                    }
+                }
+                .location {
+                    cursor: pointer;
+                    margin-bottom: 20px;
+                    i {
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        color: $main;
+                    }
+                }
+            }
+
+            .contact-form {
+                width: 45%;
+                margin-top: 5rem;
+
+                form {
+                    width: 100%;
+                    .fullname,
+                    .email {
+                        margin-bottom: 20px;
+                        label {
+                            font-size: 24px;
+                            cursor: pointer;
+
+                            span {
+                                color: #ff0000;
+                            }
+                        }
+
+                        input {
+                            cursor: pointer;
+                            display: block;
+                            width: 100%;
+                            margin-top: 0.5rem;
+                            padding: 15px 30px;
+                            font-size: 18px;
+                            background-color: #f2f2f2;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+
+                    .text-area {
+                        margin-bottom: 20px;
+
+                        label {
+                            font-size: 24px;
+                            cursor: pointer;
+                            span {
+                                color: #ff0000;
+                            }
+                        }
+
+                        textarea {
+                            cursor: pointer;
+                            display: block;
+                            width: 100%;
+                            margin-top: 0.5rem;
+                            padding: 15px 30px;
+                            font-size: 18px;
+                            background-color: #f2f2f2;
+                            border: none;
+                            outline: none;
+                            color: #808080;
+                        }
+                    }
+
+                    button {
+                        background-color: $main;
+                        color: #fff;
+                        width: 100%;
+                        padding: 15px 30px;
+                        border-radius: 0.5rem;
+                        font-size: 24px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #2b3c2a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1114px) {
+    section {
+        .contact-container {
+            .contact-wrapper {
+                display: block;
+
+                .contact-additional {
+                    width: 100%;
+
+                    .phone,
+                    .mail,
+                    .location {
+                        font-size: 24px;
+                    }
+                }
+
+                .contact-form {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
