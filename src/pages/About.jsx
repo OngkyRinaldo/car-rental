@@ -1,9 +1,9 @@
-import IndexAbout from '../components/about';
+import Index from '../components/about';
 
 const About = () => {
     return (
         <main>
-            <IndexAbout />
+            <Index />
         </main>
     );
 };

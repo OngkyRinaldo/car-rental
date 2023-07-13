@@ -1,7 +1,7 @@
 import './about.scss';
 
 import ShowRoom from './assets/img/showroom.jpg';
-const IndexAbout = () => {
+const Index = () => {
     return (
         <section className='about'>
             <img src={ShowRoom} alt='showroom.jpg' className='about-image' />
@@ -49,4 +49,4 @@ const IndexAbout = () => {
     );
 };
 
-export default IndexAbout;
+export default Index;
