@@ -4,6 +4,8 @@ import Navbar from './components/navbar/Navbar';
 import { useState } from 'react';
 import Menu from './components/navbar/Menu';
 import About from './pages/About';
+import Vechicle from './pages/Vechicle';
+import Teams from './pages/Teams';
 import Footer from './components/footer/Footer';
 
 const App = () => {
@@ -15,9 +17,11 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='about' element={<About />} />
+                <Route path='vechicle' element={<Vechicle />} />
+                <Route path='teams' element={<Teams />} />
             </Routes>
 
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };

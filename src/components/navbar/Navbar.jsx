@@ -35,7 +35,25 @@ const Navbar = ({ clicked, isClicked }) => {
                             style={navLinkStyles}
                             to='/about'
                         >
-                            About us
+                            About
+                        </NavLink>
+                    </li>
+                    <li className='navElement'>
+                        <NavLink
+                            className='link'
+                            to='/vechicle'
+                            style={navLinkStyles}
+                        >
+                            Vehicle Models
+                        </NavLink>
+                    </li>
+                    <li className='navElement'>
+                        <NavLink
+                            className='link'
+                            to='/teams'
+                            style={navLinkStyles}
+                        >
+                            Our Team
                         </NavLink>
                     </li>
                     <li className='navElement'>

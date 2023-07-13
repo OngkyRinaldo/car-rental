@@ -116,7 +116,7 @@ const Footer = () => {
                         >
                             car rental website design
                         </Link>
-                        copyright &#169; 2023. All rights are reserverd
+                        copyright &#169; 2023. All rights are reserved
                     </p>
 
                     <Link
