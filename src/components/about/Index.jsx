@@ -1,6 +1,7 @@
 import './about.scss';
 
 import ShowRoom from './assets/img/showroom.jpg';
+
 const Index = () => {
     return (
         <section className='about'>
