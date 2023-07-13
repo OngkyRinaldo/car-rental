@@ -1,11 +1,11 @@
-import Book from '../components/home/book/Book';
+import Booking from '../components/home/book/Booking';
 import Hero from '../components/home/hero/Hero';
 
 const Home = () => {
     return (
         <main>
             <Hero />
-            <Book />
+            <Booking />
         </main>
     );
 };
