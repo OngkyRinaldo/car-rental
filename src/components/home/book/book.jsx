@@ -71,7 +71,7 @@ const Book = () => {
                     </div>
                     <div className='drop-off'>
                         <label>
-                            <i className='fa-regular fa-calendar-days '></i>{' '}
+                            <i className='fa-regular fa-calendar-days '></i>
                             &nbsp; Drop-Off <b>*</b>
                         </label>
                         <input type='date' />
