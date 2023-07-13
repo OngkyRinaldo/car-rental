@@ -1,4 +1,5 @@
-import Booking from '../components/home/book/Booking';
+import Banner from '../components/home/banner/Banner';
+import Booking from '../components/home/booking/Booking';
 import Hero from '../components/home/hero/Hero';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <main>
             <Hero />
             <Booking />
+            <Banner />
         </main>
     );
 };
