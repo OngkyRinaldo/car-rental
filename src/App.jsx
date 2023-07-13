@@ -7,6 +7,7 @@ import About from './pages/About';
 import Vechicle from './pages/Vechicle';
 import Teams from './pages/Teams';
 import Footer from './components/footer/Footer';
+import Contact from './pages/Contact';
 
 const App = () => {
     const [clicked, isClicked] = useState(false);
@@ -19,9 +20,10 @@ const App = () => {
                 <Route path='about' element={<About />} />
                 <Route path='vechicle' element={<Vechicle />} />
                 <Route path='teams' element={<Teams />} />
+                <Route path='contact' element={<Contact />} />
             </Routes>
 
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 };
