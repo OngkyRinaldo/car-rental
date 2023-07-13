@@ -1,5 +1,11 @@
+import Index from '../components/about';
+
 const About = () => {
-    return <main></main>;
+    return (
+        <main>
+            <Index />
+        </main>
+    );
 };
 
 export default About;
