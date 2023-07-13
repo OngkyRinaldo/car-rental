@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Menu from './components/navbar/Menu';
 
 import Footer from './components/footer/Footer';
+import About from './pages/About';
 
 const App = () => {
     const [clicked, isClicked] = useState(false);
@@ -14,6 +15,7 @@ const App = () => {
             {clicked ? <Menu /> : null}
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
             </Routes>
 
             <Footer />
