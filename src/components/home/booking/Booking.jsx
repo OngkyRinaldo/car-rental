@@ -2,7 +2,7 @@ import './book.scss';
 
 const Booking = () => {
     return (
-        <section className='book' id='booking'>
+        <section className='book disable-text-selection' id='booking'>
             <div className='book-container'>
                 <h2>Book a car</h2>
                 <form>

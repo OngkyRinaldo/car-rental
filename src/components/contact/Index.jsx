@@ -3,7 +3,7 @@ import './contact.scss';
 const Index = () => {
     return (
         <section>
-            <div className='contact-container'>
+            <div className='contact-container disable-text-selection'>
                 <div className='contact-wrapper'>
                     <div className='contact-additional'>
                         <h2>Need additional information?</h2>

@@ -4,7 +4,7 @@ import './footer.scss';
 const Footer = () => {
     return (
         <footer>
-            <div className='footer-container'>
+            <div className='footer-container disable-text-selection'>
                 <div className='footer-email'>
                     <h2>
                         Subcribe for Any News Updates From

@@ -14,7 +14,7 @@ const Faq = () => {
         setSelected(i);
     };
     return (
-        <section className='faq'>
+        <section className='faq disable-text-selection'>
             <div className='faq-container'>
                 <div className='faq-title'>
                     <h2>faq</h2>

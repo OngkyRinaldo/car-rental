@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const CarsList = () => {
     return (
-        <section className='carList'>
+        <section className='carList disable-text-selection'>
             <div className='carList-container'>
                 <div className='carList-title'>
                     <h2>Top Deals</h2>

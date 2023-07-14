@@ -5,7 +5,7 @@ import AppleLogo from './assets/icon/apple-logo.png';
 
 const Hero = () => {
     return (
-        <section className='hero'>
+        <section className='hero disable-text-selection'>
             <div className='hero-container'>
                 <div className='hero-title'>
                     <h1>Looking Towards Saving More On Car Rental</h1>

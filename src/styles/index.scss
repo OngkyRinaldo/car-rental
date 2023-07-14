@@ -12,5 +12,12 @@ body {
 
     main {
         width: 100%;
+
+        .disable-text-selection {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
     }
 }

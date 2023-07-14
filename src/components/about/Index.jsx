@@ -4,7 +4,7 @@ import ShowRoom from './assets/img/showroom.jpg';
 
 const Index = () => {
     return (
-        <section className='about'>
+        <section className='about disable-text-selection'>
             <img src={ShowRoom} alt='showroom.jpg' className='about-image' />
             <div className='about-container'>
                 <div className='about-desc'>

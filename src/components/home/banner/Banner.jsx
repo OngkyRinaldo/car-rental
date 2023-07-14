@@ -3,7 +3,7 @@ import Audi from './assets/img/audi.jpg';
 
 const Banner = () => {
     return (
-        <section className='banner'>
+        <section className='banner disable-text-selection'>
             <div className='banner-container'>
                 <img src={Audi} alt='audi,jpg' />
                 <div className='banner-desc'>
