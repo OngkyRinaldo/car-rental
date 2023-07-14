@@ -1,21 +1,21 @@
-$main: #557153;
+@import '../../../styles/variables';
 
 .carList {
-    width: 85%;
-    margin: 0 auto;
-    height: fit-content;
+    width: $full;
+
+    height: $content;
     margin-top: 5rem;
     padding-bottom: 15px;
 
     .carList-container {
-        width: 100%;
+        @include container;
 
         .carList-title {
             margin-bottom: 15px;
 
             h2 {
                 text-align: center;
-                font-size: 36px;
+                font-size: $primary-fz;
             }
         }
 
@@ -82,16 +82,10 @@ $main: #557153;
                 }
 
                 .card-desc {
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    justify-content: space-between;
+                    @include flex-box;
 
                     .shiftgear {
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        justify-content: space-between;
+                        @include flex-box;
 
                         img {
                             width: 50px;
@@ -99,22 +93,19 @@ $main: #557153;
                         }
 
                         p {
-                            color: $main;
+                            color: $primary-color;
                         }
                     }
 
                     .gas {
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        justify-content: space-between;
+                        @include flex-box;
 
                         i {
                             margin-right: 5px;
                         }
 
                         p {
-                            color: $main;
+                            color: $primary-color;
                         }
                     }
                 }
@@ -122,7 +113,7 @@ $main: #557153;
                 .card-link {
                     text-align: center;
                     border-radius: 0.5rem;
-                    background-color: $main;
+                    background-color: $primary-color;
                     cursor: pointer;
                     padding: 8px 16px;
                 }
@@ -131,17 +122,17 @@ $main: #557153;
 
         .card-seeMore {
             margin-top: 30px;
-            font-size: 24px;
+            font-size: $secondary-fz;
             text-align: center;
             border-radius: 0.5rem;
-            background-color: $main;
+            background-color: $primary-color;
             cursor: pointer;
             padding: 8px 20px;
             margin-left: auto;
             margin-right: auto;
             display: block;
-            width: 50%;
-            border: 1px solid #fff;
+            width: calc($full/2);
+            border: 1px solid $white-color;
         }
     }
 }
@@ -162,7 +153,7 @@ $main: #557153;
 
                     .card-title {
                         .title {
-                            font-size: 10px;
+                            font-size: $span-fz;
                         }
 
                         .card-price {
@@ -186,7 +177,7 @@ $main: #557153;
                             }
 
                             p {
-                                font-size: 12px;
+                                font-size: $span-fz;
                             }
                         }
 
@@ -194,7 +185,7 @@ $main: #557153;
                             margin-bottom: 5px;
 
                             i {
-                                font-size: 15px;
+                                font-size: $span-fz;
                             }
                         }
                     }

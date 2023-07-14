@@ -1,19 +1,19 @@
-$main: #557153;
+@import '../../styles/variables';
 
-section {
-    width: 85%;
-    margin: 0 auto;
-    height: fit-content;
+.vehicle {
+    width: $full;
+
+    height: $content;
     margin-top: 2rem;
     padding-bottom: 75px;
 
     .vehicle-container {
-        width: 100%;
+        @include container;
 
         .vehicle-topdeals {
             h2 {
                 text-align: center;
-                font-size: 36px;
+                font-size: $primary-fz;
                 margin-bottom: 3rem;
             }
 
@@ -51,12 +51,14 @@ section {
                     img {
                         object-fit: cover;
                         height: 150px;
+                        margin: 0 auto;
+                        display: block;
                     }
 
                     .card-title {
                         margin-top: 5px;
                         .card-year {
-                            color: #808080;
+                            color: $fourth-color;
                             margin-bottom: 5px;
                         }
 
@@ -65,8 +67,8 @@ section {
                             margin-bottom: 10px;
                             p {
                                 display: inline;
-                                font-size: 14px;
-                                color: #808080;
+                                font-size: $span-fz;
+                                color: $fourth-color;
                             }
 
                             .card-priceday {
@@ -80,16 +82,10 @@ section {
                     }
 
                     .card-desc {
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        justify-content: space-between;
+                        @include flex-box;
 
                         .shiftgear {
-                            display: flex;
-                            flex-wrap: wrap;
-                            align-items: center;
-                            justify-content: space-between;
+                            @include flex-box;
 
                             img {
                                 width: 50px;
@@ -97,22 +93,18 @@ section {
                             }
 
                             p {
-                                color: $main;
+                                color: $primary-color;
                             }
                         }
 
                         .gas {
-                            display: flex;
-                            flex-wrap: wrap;
-                            align-items: center;
-                            justify-content: space-between;
-
+                            @include flex-box;
                             i {
                                 margin-right: 5px;
                             }
 
                             p {
-                                color: $main;
+                                color: $primary-color;
                             }
                         }
                     }
@@ -120,7 +112,7 @@ section {
                     .card-link {
                         text-align: center;
                         border-radius: 0.5rem;
-                        background-color: $main;
+                        background-color: $primary-color;
                         cursor: pointer;
                         padding: 8px 16px;
                     }
@@ -133,7 +125,7 @@ section {
 
             h2 {
                 text-align: center;
-                font-size: 36px;
+                font-size: $primary-fz;
                 margin-bottom: 3rem;
             }
 
@@ -171,12 +163,14 @@ section {
                     img {
                         object-fit: cover;
                         height: 150px;
+                        margin: 0 auto;
+                        display: block;
                     }
 
                     .card-title {
                         margin-top: 5px;
                         .card-year {
-                            color: #808080;
+                            color: $fourth-color;
                             margin-bottom: 5px;
                         }
 
@@ -185,8 +179,8 @@ section {
                             margin-bottom: 10px;
                             p {
                                 display: inline;
-                                font-size: 14px;
-                                color: #808080;
+                                font-size: $span-fz;
+                                color: $fourth-color;
                             }
 
                             .card-priceday {
@@ -200,16 +194,10 @@ section {
                     }
 
                     .card-desc {
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        justify-content: space-between;
+                        @include flex-box;
 
                         .shiftgear {
-                            display: flex;
-                            flex-wrap: wrap;
-                            align-items: center;
-                            justify-content: space-between;
+                            @include flex-box;
 
                             img {
                                 width: 50px;
@@ -217,22 +205,19 @@ section {
                             }
 
                             p {
-                                color: $main;
+                                color: $primary-color;
                             }
                         }
 
                         .gas {
-                            display: flex;
-                            flex-wrap: wrap;
-                            align-items: center;
-                            justify-content: space-between;
+                            @include flex-box;
 
                             i {
                                 margin-right: 5px;
                             }
 
                             p {
-                                color: $main;
+                                color: $primary-color;
                             }
                         }
                     }
@@ -240,7 +225,7 @@ section {
                     .card-link {
                         text-align: center;
                         border-radius: 0.5rem;
-                        background-color: $main;
+                        background-color: $primary-color;
                         cursor: pointer;
                         padding: 8px 16px;
                     }
@@ -252,7 +237,7 @@ section {
 
             h2 {
                 text-align: center;
-                font-size: 36px;
+                font-size: $primary-fz;
                 margin-bottom: 3rem;
             }
 
@@ -290,12 +275,14 @@ section {
                     img {
                         object-fit: cover;
                         height: 150px;
+                        margin: 0 auto;
+                        display: block;
                     }
 
                     .card-title {
                         margin-top: 5px;
                         .card-year {
-                            color: #808080;
+                            color: $fourth-color;
                             margin-bottom: 5px;
                         }
 
@@ -304,8 +291,8 @@ section {
                             margin-bottom: 10px;
                             p {
                                 display: inline;
-                                font-size: 14px;
-                                color: #808080;
+                                font-size: $span-fz;
+                                color: $fourth-color;
                             }
 
                             .card-priceday {
@@ -319,16 +306,10 @@ section {
                     }
 
                     .card-desc {
-                        display: flex;
-                        flex-wrap: wrap;
-                        align-items: center;
-                        justify-content: space-between;
+                        @include flex-box;
 
                         .shiftgear {
-                            display: flex;
-                            flex-wrap: wrap;
-                            align-items: center;
-                            justify-content: space-between;
+                            @include flex-box;
 
                             img {
                                 width: 50px;
@@ -336,22 +317,19 @@ section {
                             }
 
                             p {
-                                color: $main;
+                                color: $primary-color;
                             }
                         }
 
                         .gas {
-                            display: flex;
-                            flex-wrap: wrap;
-                            align-items: center;
-                            justify-content: space-between;
+                            @include flex-box;
 
                             i {
                                 margin-right: 5px;
                             }
 
                             p {
-                                color: $main;
+                                color: $primary-color;
                             }
                         }
                     }
@@ -359,7 +337,7 @@ section {
                     .card-link {
                         text-align: center;
                         border-radius: 0.5rem;
-                        background-color: $main;
+                        background-color: $primary-color;
                         cursor: pointer;
                         padding: 8px 16px;
                     }
@@ -370,7 +348,7 @@ section {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1114px) {
-    section {
+    .vehicle {
         .vehicle-container {
             .vehicle-topdeals {
                 .vehicle-card {
@@ -403,7 +381,7 @@ section {
                         .card-desc {
                             display: block;
                             .shiftgear {
-                                margin-left: -15px;
+                                margin-left: -60%;
                                 img {
                                     width: 40px;
                                     height: 40px;
@@ -460,7 +438,7 @@ section {
                         .card-desc {
                             display: block;
                             .shiftgear {
-                                margin-left: -15px;
+                                margin-left: -60%;
                                 img {
                                     width: 40px;
                                     height: 40px;
@@ -517,7 +495,7 @@ section {
                         .card-desc {
                             display: block;
                             .shiftgear {
-                                margin-left: -15px;
+                                margin-left: -60%;
                                 img {
                                     width: 40px;
                                     height: 40px;

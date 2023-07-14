@@ -4,7 +4,7 @@ import CarList from '../home/carList/CarList';
 
 const Index = () => {
     return (
-        <section>
+        <section className='vehicle'>
             <div className='vehicle-container'>
                 <div className='vehicle-topdeals'>
                     <h2>Top Deals</h2>

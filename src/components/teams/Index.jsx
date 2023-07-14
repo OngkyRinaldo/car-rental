@@ -6,7 +6,7 @@ import team3 from './assets/img/3.png';
 
 const Index = () => {
     return (
-        <section>
+        <section className='team'>
             <Breadcrumb />
             <div className='team-container'>
                 <h2>Our Team Members</h2>

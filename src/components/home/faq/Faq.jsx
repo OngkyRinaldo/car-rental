@@ -38,7 +38,7 @@ const Faq = () => {
                                     onClick={() => toggle(i)}
                                 >
                                     <h2>{data.question} </h2>
-                                    <span>{selected === i ? '⌄' : '⌄'} </span>
+                                    <span>{selected === i ? '⌄' : '⌃'} </span>
                                 </div>
                                 <div
                                     className={

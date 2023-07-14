@@ -1,14 +1,13 @@
-$main: #557153;
+@import '../../../styles/variables';
 
 .faq {
-    width: 100%;
+    width: $full;
     padding-top: 3rem;
     padding-bottom: 10px;
 
     .faq-container {
-        width: 85%;
-        margin: 0 auto;
-        height: fit-content;
+        @include container;
+        height: $content;
 
         .faq-title {
             text-align: center;
@@ -18,13 +17,13 @@ $main: #557153;
             }
             h3 {
                 margin-top: 10px;
-                font-size: 36px;
+                font-size: $primary-fz;
             }
 
             p {
-                color: #808080;
+                color: $fourth-color;
                 margin-top: 10px;
-                font-size: 18px;
+                font-size: $fourth-fz;
 
                 span {
                     display: block;
@@ -33,17 +32,14 @@ $main: #557153;
         }
 
         .faq-desc {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex-box;
             flex-direction: row;
-            flex-wrap: wrap;
             gap: 1rem;
             height: 400px;
 
             img {
                 width: 40%;
-                height: 100%;
+                height: $full;
             }
 
             .accordion {
@@ -52,20 +48,17 @@ $main: #557153;
                     0 4px 6px -2px rgba(0, 0, 0, 0.05);
                 border-radius: 0.5rem;
 
-                width: 50%;
+                width: calc($full/2);
                 display: block;
                 cursor: pointer;
 
                 .accordion-title {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    align-items: center;
+                    @include flex-box;
                     gap: 10px;
                     padding: 20px;
 
                     h2 {
-                        font-size: 15px;
+                        font-size: $fourth-fz;
                     }
 
                     span {
@@ -75,17 +68,17 @@ $main: #557153;
                 }
 
                 .title.show {
-                    background-color: $main;
-                    color: #fff;
+                    background-color: $primary-color;
+                    color: $white-color;
                 }
 
                 .title {
-                    background-color: #fff;
-                    color: #000;
+                    background-color: $white-color;
+                    color: $black-color;
                 }
 
                 .content {
-                    color: black;
+                    color: $black-color;
                     max-height: 0;
                     overflow: hidden;
                     transition: all 0.5s cubic-bezier(0, 1, 0, 1);
@@ -108,19 +101,19 @@ $main: #557153;
         .faq-container {
             .faq-title {
                 h3 {
-                    font-size: 24px;
+                    font-size: $secondary-fz;
                 }
             }
 
             .faq-desc {
                 display: block;
                 img {
-                    width: 100%;
+                    width: $full;
                     padding: 10px;
                 }
                 .accordion {
                     margin-top: 2rem;
-                    width: 100%;
+                    width: $full;
                     .accordion-title {
                         h2 {
                             font-size: 15px;

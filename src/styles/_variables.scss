@@ -1,0 +1,33 @@
+// colors
+$primary-color: #557153;
+$secondary-color: #ff4d30;
+$third-color: #f8f8f8;
+$fourth-color: #808080;
+$fifth-color: #f3f7f0;
+$six-color: #f6f7f6;
+$white-color: #fff;
+$black-color: #000;
+$bg-color: #fcfcfc;
+
+// font-size
+$primary-fz: 36px;
+$secondary-fz: 24px;
+$third-fz: 20px;
+$fourth-fz: 18px;
+$span-fz: 12px;
+
+// width and heigth
+$full: 100%;
+$content: fit-content;
+
+@mixin container() {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@mixin flex-box() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

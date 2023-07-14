@@ -1,63 +1,57 @@
-$main: #557153;
+@import '../../../styles/variables';
 
 .hero {
-    width: 100%;
+    width: $full;
     padding-top: 1rem;
     padding-bottom: 10px;
 
     .hero-container {
-        width: 85%;
-        margin: 0 auto;
-        height: 100vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        @include container;
+        @include flex-box;
         gap: 1rem;
+
+        height: 100vh;
 
         .hero-title {
             width: 40%;
             margin-top: 10rem;
 
             h1 {
-                font-size: 36px;
-                color: $main;
+                font-size: $primary-fz;
+                color: $primary-color;
                 margin-bottom: 20px;
             }
 
             p {
-                font-size: 20px;
+                font-size: $third-fz;
                 margin-bottom: 10px;
             }
 
             .hero-socmed {
-                width: 100%;
+                width: $full;
                 p {
-                    font-size: 20px;
+                    font-size: $third-fz;
                     font-weight: bold;
                     margin-bottom: 40px;
                 }
 
                 .hero-apps {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
+                    width: $full;
+                    @include flex-box;
 
                     .google-play {
-                        width: 50%;
+                        width: calc($full / 2);
 
                         img {
-                            width: 100%;
+                            width: $full;
                         }
                     }
 
                     .apple-store {
-                        width: 50%;
+                        width: calc($full / 2);
 
                         img {
-                            width: 100%;
+                            width: $full;
                         }
                     }
                 }
@@ -66,9 +60,9 @@ $main: #557153;
 
         .hero-img {
             width: 55%;
-            background-color: $main;
+            background-color: $primary-color;
             border-radius: 1rem;
-            height: 100%;
+            height: $full;
             position: relative;
             img {
                 width: 175%;
@@ -88,7 +82,7 @@ $main: #557153;
             height: fit-content;
 
             .hero-title {
-                width: 100%;
+                width: $full;
                 margin-top: 1rem;
 
                 .hero-socmed {
@@ -99,14 +93,12 @@ $main: #557153;
             }
 
             .hero-img {
-                width: 100%;
+                width: $full;
                 height: 200px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-box;
                 img {
                     margin: 0 auto;
-                    width: 120%;
+                    width: $full + 20%;
                 }
             }
         }

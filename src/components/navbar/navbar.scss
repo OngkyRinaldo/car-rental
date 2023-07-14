@@ -1,11 +1,10 @@
-$main: #557153;
+@import '../../styles/variables';
 
 header {
     width: 100%;
 
     nav {
-        width: 85%;
-        margin: 0 auto;
+        @include container;
         justify-content: center;
         text-align: center;
         padding: 30px 0;
@@ -25,7 +24,7 @@ header {
 
                 .link {
                     text-decoration: none;
-                    color: $main;
+                    color: $primary-color;
                 }
             }
 
@@ -49,14 +48,14 @@ header {
                 .navElement {
                     .link {
                         text-decoration: none;
-                        color: $main;
+                        color: $primary-color;
                         font-weight: 400;
                     }
                 }
 
                 .navButton {
                     float: right;
-                    background-color: $main;
+                    background-color: $primary-color;
                     border-radius: 0.25rem;
                     padding: 10px 20px 10px 20px;
                     margin: -8px 2px 1px 2px;
@@ -68,7 +67,7 @@ header {
 
                     .link {
                         text-decoration: none;
-                        color: #fff;
+                        color: $white-color;
                     }
                 }
             }
