@@ -1,30 +1,34 @@
-@import '../../styles/variables';
+$main: #557153;
 
-.contact {
-    width: $full;
+section {
+    width: 85%;
+    margin: 0 auto;
     height: fit-content;
     margin-top: 2rem;
     padding-bottom: 100px;
 
     .contact-container {
-        @include container;
+        width: 100%;
 
         .contact-wrapper {
-            width: $full;
-            @include flex-box;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
             gap: 1.5rem;
 
             .contact-additional {
                 width: 45%;
 
                 h2 {
-                    font-size: $primary-fz;
+                    font-size: 36px;
                     margin-bottom: 20px;
                 }
 
                 p {
                     font-size: 16px;
-                    color: $fourth-color;
+                    color: #808080;
                     margin-bottom: 20px;
                 }
 
@@ -36,7 +40,7 @@
                     }
 
                     &:hover {
-                        color: $primary-color;
+                        color: $main;
                     }
                 }
                 .mail {
@@ -47,7 +51,7 @@
                     }
 
                     &:hover {
-                        color: $primary-color;
+                        color: $main;
                     }
                 }
                 .location {
@@ -58,7 +62,7 @@
                     }
 
                     &:hover {
-                        color: $primary-color;
+                        color: $main;
                     }
                 }
             }
@@ -68,12 +72,12 @@
                 margin-top: 5rem;
 
                 form {
-                    width: $full;
+                    width: 100%;
                     .fullname,
                     .email {
                         margin-bottom: 20px;
                         label {
-                            font-size: $secondary-fz;
+                            font-size: 24px;
                             cursor: pointer;
 
                             span {
@@ -84,10 +88,10 @@
                         input {
                             cursor: pointer;
                             display: block;
-                            width: $full;
+                            width: 100%;
                             margin-top: 0.5rem;
                             padding: 15px 30px;
-                            font-size: $fourth-fz;
+                            font-size: 18px;
                             background-color: #f2f2f2;
                             border: none;
                             outline: none;
@@ -98,7 +102,7 @@
                         margin-bottom: 20px;
 
                         label {
-                            font-size: $secondary-fz;
+                            font-size: 24px;
                             cursor: pointer;
                             span {
                                 color: #ff0000;
@@ -108,24 +112,24 @@
                         textarea {
                             cursor: pointer;
                             display: block;
-                            width: $full;
+                            width: 100%;
                             margin-top: 0.5rem;
                             padding: 15px 30px;
-                            font-size: $fourth-fz;
+                            font-size: 18px;
                             background-color: #f2f2f2;
                             border: none;
                             outline: none;
-                            color: $fourth-color;
+                            color: #808080;
                         }
                     }
 
                     button {
-                        background-color: $primary-color;
-                        color: $white-color;
-                        width: $full;
+                        background-color: $main;
+                        color: #fff;
+                        width: 100%;
                         padding: 15px 30px;
                         border-radius: 0.5rem;
-                        font-size: $secondary-fz;
+                        font-size: 24px;
                         cursor: pointer;
 
                         &:hover {
@@ -139,23 +143,23 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1114px) {
-    .contact {
+    section {
         .contact-container {
             .contact-wrapper {
                 display: block;
 
                 .contact-additional {
-                    width: $full;
+                    width: 100%;
 
                     .phone,
                     .mail,
                     .location {
-                        font-size: $secondary-fz;
+                        font-size: 24px;
                     }
                 }
 
                 .contact-form {
-                    width: $full;
+                    width: 100%;
                 }
             }
         }
