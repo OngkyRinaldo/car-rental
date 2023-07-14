@@ -1,21 +1,17 @@
-$main: #557153;
+@import '../../styles/variables';
 
 section {
-    width: 85%;
-    margin: 0 auto;
-    height: fit-content;
+    width: $full;
+    height: $content;
     margin-top: 2rem;
     padding-bottom: 100px;
 
     .contact-container {
-        width: 100%;
+        @include container;
 
         .contact-wrapper {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
+            @include flex-box;
             gap: 1.5rem;
 
             .contact-additional {
@@ -28,7 +24,7 @@ section {
 
                 p {
                     font-size: 16px;
-                    color: #808080;
+                    color: $fourth-color;
                     margin-bottom: 20px;
                 }
 
@@ -40,7 +36,7 @@ section {
                     }
 
                     &:hover {
-                        color: $main;
+                        color: $primary-color;
                     }
                 }
                 .mail {
@@ -51,7 +47,7 @@ section {
                     }
 
                     &:hover {
-                        color: $main;
+                        color: $primary-color;
                     }
                 }
                 .location {
@@ -62,7 +58,7 @@ section {
                     }
 
                     &:hover {
-                        color: $main;
+                        color: $primary-color;
                     }
                 }
             }
@@ -72,12 +68,12 @@ section {
                 margin-top: 5rem;
 
                 form {
-                    width: 100%;
+                    width: $full;
                     .fullname,
                     .email {
                         margin-bottom: 20px;
                         label {
-                            font-size: 24px;
+                            font-size: $secondary-fz;
                             cursor: pointer;
 
                             span {
@@ -88,10 +84,10 @@ section {
                         input {
                             cursor: pointer;
                             display: block;
-                            width: 100%;
+                            width: $full;
                             margin-top: 0.5rem;
                             padding: 15px 30px;
-                            font-size: 18px;
+                            font-size: $fourth-fz;
                             background-color: #f2f2f2;
                             border: none;
                             outline: none;
@@ -102,7 +98,7 @@ section {
                         margin-bottom: 20px;
 
                         label {
-                            font-size: 24px;
+                            font-size: $secondary-fz;
                             cursor: pointer;
                             span {
                                 color: #ff0000;
@@ -112,19 +108,19 @@ section {
                         textarea {
                             cursor: pointer;
                             display: block;
-                            width: 100%;
+                            width: $full;
                             margin-top: 0.5rem;
                             padding: 15px 30px;
                             font-size: 18px;
                             background-color: #f2f2f2;
                             border: none;
                             outline: none;
-                            color: #808080;
+                            color: $fourth-color;
                         }
                     }
 
                     button {
-                        background-color: $main;
+                        background-color: $primary-color;
                         color: #fff;
                         width: 100%;
                         padding: 15px 30px;
